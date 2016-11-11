@@ -1,0 +1,52 @@
+div.sp table{
+	font-family: Verdana;
+	font-size:17px;
+	text-align: center;
+	width: 500px;
+}
+th{
+	background: #297AF4;
+	color: #FFFFFF;
+}
+h2#pro{
+	background: #020B4C;
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-size:27px;
+	width: 595px;
+	margin-bottom: 10px;
+}
+form#sesion input{
+	padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px;
+}
+form#inicio input{
+	padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px;
+}
+form#sesion{
+	width: 50px;
+	display: inline-block;
+}
+h1{
+	width: 484px;
+	display:inline-block;
+}
+form.esc{
+	display: none;
+}
+.esconde{
+	display: none;
+}
+h2#new{
+	color: #8A8E27;
+  	font-weight: normal;
+  	font-family: Arial, Helvetica, sans-serif;
+  	font-size: 58px
+}
