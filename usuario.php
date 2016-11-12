@@ -18,7 +18,7 @@
 		$query='select * from stock';
 		$muestra=mysql_query($query);
 		echo '<h2 id="pro">Productos</h2>';
-		echo '<table>';
+		echo '<table id="pro">';
 		echo '<thead>';
 		echo '<th>stock_id</th>';
 		echo '<th>Producto</th>';
@@ -34,22 +34,13 @@
 		mysql_free_result($muestra);
 		?>
 	</div>
-	<div class="car">
-		<form class="car">
-			<h2>Inserta el id del producto</h2>
-			<input type="number" placeholder="inserta el id del producto" required name="producto" id="nombre">
-			<h2>Cantidad a comprar</h2>
-			<input type="number" placeholder="Cantidad a comprar" value=1 id="can">
-			<input type="submit" value="Añadir al carrito">
-		</form>
-	</div>
 	<div class="ar">
 		<?php
 		include 'conecta.php';                                    
 		$query='select st.stock_id, st.producto, st.precio, ca.cantidadCom from carrito as ca left join stock as st on ca.stock_id=st.stock_id';
 		$muestra=mysql_query($query);
 		echo '<h2 id="pro">carrito</h2>';
-		echo '<table>';
+		echo '<table id="car">';
 		echo '<thead>';
 		echo '<th>stock_id</th>';
 		echo '<th>Cantidad a comprar</th>';
@@ -62,6 +53,15 @@
 		echo '</table>';
 		mysql_free_result($muestra);
 		?>
+	</div>
+	<div class="car">
+		<form class="car">
+			<h2>Inserta el id del producto</h2>
+			<input type="number" placeholder="inserta el id del producto" required name="producto" id="nombre">
+			<h2>Cantidad a comprar</h2>
+			<input type="number" placeholder="Cantidad a comprar" required name="cantidad" value=1 id="can">
+			<input type="submit" value="Añadir al carrito">
+		</form>
 	</div>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="codigo.js"></script>

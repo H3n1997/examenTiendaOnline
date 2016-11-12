@@ -1,3 +1,5 @@
+create database store;
+
 create table usuarios(usuario_id integer auto_increment primary key, nombre varchar(50),password varchar(15),tipo integer);
 
 insert into usuarios(nombre,password,tipo) values ('admin','admin',0),('henry','henry1997',1);
